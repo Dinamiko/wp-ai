@@ -1,0 +1,17 @@
+{
+  "name": "wp-ai",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "wp-scripts start",
+    "build": "wp-scripts build",
+    "wp-env": "wp-env"
+  },
+  "devDependencies": {
+    "@wordpress/env": "^10.36.0",
+    "@wordpress/scripts": "^31.1.0"
+  },
+  "dependencies": {
+    "@wordpress/components": "^30.9.0",
+    "wp-interface": "^1.0.0"
+  }
+}

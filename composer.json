@@ -1,0 +1,17 @@
+{
+    "name": "dinamiko/wp-ai",
+    "autoload": {
+        "psr-4": {
+            "Dinamiko\\WpAi\\": "includes/"
+        }
+    },
+    "require": {
+        "wordpress/wp-ai-client": "^0.2.1",
+        "wordpress/abilities-api": "^0.4.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    }
+}

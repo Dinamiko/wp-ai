@@ -1,0 +1,10 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/wp-env.json",
+  "plugins": [
+    ".",
+    "https://github.com/WordPress/mcp-adapter/releases/download/v0.4.1/mcp-adapter.zip"
+  ],
+  "lifecycleScripts": {
+    "afterStart": "wp-env run cli wp rewrite structure /%postname%/ --hard"
+  }
+}
