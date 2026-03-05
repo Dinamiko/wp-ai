@@ -1,0 +1,1 @@
+{"version":3,"file":"index.css","mappings":";;;AAAA;EACE;AACF;;AAEA;EACE;AACF,C","sources":["webpack://wp-ai/./src/index.scss"],"sourcesContent":[".wp-ai-content {\n  padding: 20px;\n}\n\n.wp-ai-content .components-tab-panel__tabs {\n  margin-bottom: 16px;\n}\n\n"],"names":[],"sourceRoot":""}

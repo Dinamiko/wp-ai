@@ -54,7 +54,6 @@ class PostTitles extends WP_Ability {
 		return AI_Client::prompt_with_wp_error( '"""' . $input['topic'] . '"""' )
 		                ->using_system_instruction( $this->get_system_instruction() )
 		                ->using_temperature( 0.7 )
-		                ->using_candidate_count( 3 )
 		                ->generate_texts();
 	}
 
@@ -67,8 +66,6 @@ class PostTitles extends WP_Ability {
 You are an editorial assistant that generates title suggestions for online articles and pages.
 
 Goal: You will be provided with some context and you should then generate a concise, engaging, and accurate title that reflects that context. This title should be optimized for clarity, engagement, and SEO - while maintaining an appropriate tone for the author's intent and audience.
-
-IMPORTANT: Generate only one single title per response, do NOT return multiple titles separated by \n in the response.
 
 The title suggestion should follow these requirements:
 

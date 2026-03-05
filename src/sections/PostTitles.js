@@ -10,7 +10,7 @@ export default function PostTitles() {
     const handleOnClick = () => {
         executeAbility('wp-ai/post-titles', {topic})
             .then((response) => {
-                setResult(response)
+                setResult(response[0].split('\n').filter(Boolean))
             })
     }
 
