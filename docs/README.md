@@ -146,7 +146,7 @@ By default, Abilities are only available via the MCP Adapter default server if t
 For any publicly accessible WordPress installations, or if you don’t want to use STDIO, you can set up an HTTP connection using the [@automattic/mcp-wordpress-remote](https://www.npmjs.com/package/@automattic/mcp-wordpress-remote) remote proxy. This requires you to have Node.js installed on your computer, and to set up authentication using either [WordPress application passwords](https://make.wordpress.org/core/2020/11/05/application-passwords-integration-guide/) or a custom OAuth implementation.
 ```json
     "wordpress-mcp-server": {
-      "command": "npx-for-claude",
+      "command": "npx",
       "args": [
         "-y",
         "@automattic/mcp-wordpress-remote@latest"
